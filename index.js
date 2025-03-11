@@ -1,19 +1,15 @@
-const farmAnimals = 'cow horse sheep pig chicken';
+const farmAnimals = 'cow sheep pig chicken'; // Only four animals
 
 // Strings
-const { cow, horse, sheep, pig, chicken } = farmAnimals.split(' '); // 1. Destructure sounds of animals
-const bessie = cow; // 2. Assign four animals
-const dolly = sheep;
-const babe = pig;
-const little = chicken;
+const [bessie, dolly, babe, little] = farmAnimals.split(' '); // 1. Destructure sounds of animals
 
-const blackAndWhite = cow; // 3. Assign three animals to color variables
-const black = horse;
-const pink = pig;
+const blackAndWhite = bessie; // 2. Assign three traditional animal colors
+const black = dolly; // Assign black color
+const pink = babe; // Assign pink color
 
 // Arrays
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-const [r, o, y, g, b, v] = colors; // 4. Destructure color names
+const [r, o, y, g, b] = colors; // 4. Destructure color names to declare six rainbow color variables using initials
 const indg = colors[5]; // 6. Assign indigo to variable
 
 // Objects
